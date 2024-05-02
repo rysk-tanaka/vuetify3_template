@@ -15,7 +15,7 @@ export default [
   ...compat.extends(
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:vue/vue3-essential",
-    "prettier",
+    "prettier"
     // Make sure "prettier" is the last element in this list.
   ),
   {
@@ -30,6 +30,12 @@ export default [
     rules: {
       // override/add rules settings here, such as:
       // "vue/no-unused-vars": "error"
+      "vue/multi-word-component-names": [
+        "error",
+        {
+          ignores: ["index"],
+        },
+      ],
     },
   },
 ]
