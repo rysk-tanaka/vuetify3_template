@@ -17,6 +17,9 @@ importers:
       vue:
         specifier: ^3.4.21
         version: 3.4.25(typescript@5.4.5)
+      vue-router:
+        specifier: ^4.3.2
+        version: 4.3.2(vue@3.4.25(typescript@5.4.5))
       vuetify:
         specifier: ^3.5.8
         version: 3.5.17(typescript@5.4.5)(vite-plugin-vuetify@2.0.3)(vue@3.4.25(typescript@5.4.5))
@@ -62,7 +65,7 @@ importers:
         version: 0.26.0(@babel/parser@7.24.4)(rollup@4.16.4)(vue@3.4.25(typescript@5.4.5))
       unplugin-vue-router:
         specifier: ^0.8.6
-        version: 0.8.6(rollup@4.16.4)(vue@3.4.25(typescript@5.4.5))
+        version: 0.8.6(rollup@4.16.4)(vue-router@4.3.2(vue@3.4.25(typescript@5.4.5)))(vue@3.4.25(typescript@5.4.5))
       vite:
         specifier: ^5.1.5
         version: 5.2.10(@types/node@20.12.7)(sass@1.75.0)
@@ -483,6 +486,9 @@ packages:
 
   '@vue/compiler-ssr@3.4.25':
     resolution: {integrity: sha512-H2ohvM/Pf6LelGxDBnfbbXFPyM4NE3hrw0e/EpwuSiYu8c819wx+SVGdJ65p/sFrYDd6OnSDxN1MB2mN07hRSQ==}
+
+  '@vue/devtools-api@6.6.1':
+    resolution: {integrity: sha512-LgPscpE3Vs0x96PzSSB4IGVSZXZBZHpfxs+ZA1d+VEPwHdOXowy/Y2CsvCAIFrf+ssVU1pD1jidj505EpUnfbA==}
 
   '@vue/language-core@2.0.14':
     resolution: {integrity: sha512-3q8mHSNcGTR7sfp2X6jZdcb4yt8AjBXAfKk0qkZIh7GAJxOnoZ10h5HToZglw4ToFvAnq+xu/Z2FFbglh9Icag==}
@@ -1184,6 +1190,11 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
+  vue-router@4.3.2:
+    resolution: {integrity: sha512-hKQJ1vDAZ5LVkKEnHhmm1f9pMiWIBNGF5AwU67PdH7TyXCj/a4hTccuUuYCAMgJK6rO/NVYtQIEN3yL8CECa7Q==}
+    peerDependencies:
+      vue: ^3.2.0
+
   vue-template-compiler@2.7.16:
     resolution: {integrity: sha512-AYbUWAJHLGGQM7+cNTELw+KsOG9nl2CnSv467WobS5Cv9uk3wFcnr1Etsz2sEIHEZvw1U+o9mRlEO6QbZvUPGQ==}
 
@@ -1602,6 +1613,8 @@ snapshots:
     dependencies:
       '@vue/compiler-dom': 3.4.25
       '@vue/shared': 3.4.25
+
+  '@vue/devtools-api@6.6.1': {}
 
   '@vue/language-core@2.0.14(typescript@5.4.5)':
     dependencies:
@@ -2259,7 +2272,7 @@ snapshots:
       - rollup
       - supports-color
 
-  unplugin-vue-router@0.8.6(rollup@4.16.4)(vue@3.4.25(typescript@5.4.5)):
+  unplugin-vue-router@0.8.6(rollup@4.16.4)(vue-router@4.3.2(vue@3.4.25(typescript@5.4.5)))(vue@3.4.25(typescript@5.4.5)):
     dependencies:
       '@babel/types': 7.24.0
       '@rollup/pluginutils': 5.1.0(rollup@4.16.4)
@@ -2274,6 +2287,8 @@ snapshots:
       scule: 1.3.0
       unplugin: 1.10.1
       yaml: 2.4.2
+    optionalDependencies:
+      vue-router: 4.3.2(vue@3.4.25(typescript@5.4.5))
     transitivePeerDependencies:
       - rollup
       - vue
@@ -2326,6 +2341,11 @@ snapshots:
       semver: 7.6.0
     transitivePeerDependencies:
       - supports-color
+
+  vue-router@4.3.2(vue@3.4.25(typescript@5.4.5)):
+    dependencies:
+      '@vue/devtools-api': 6.6.1
+      vue: 3.4.25(typescript@5.4.5)
 
   vue-template-compiler@2.7.16:
     dependencies:
