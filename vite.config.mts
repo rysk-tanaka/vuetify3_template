@@ -44,6 +44,7 @@ export default defineConfig({
         // presets
         'vue',
         'vue-router',
+        'pinia',
         // custom
         {
           '@vueuse/core': [
@@ -86,6 +87,7 @@ export default defineConfig({
         // './composables' // only root modules
         // './composables/**', // all nested modules
         // ...
+        'src/stores',
       ],
 
       // Filepath to generate corresponding .d.ts file.
