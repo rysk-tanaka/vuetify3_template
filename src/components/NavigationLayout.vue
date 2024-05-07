@@ -14,7 +14,7 @@
       <template #append> </template>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" app>
+    <v-navigation-drawer v-model="drawer" app temporary>
       <v-list>
         <v-list-item
           v-for="route in routes"
