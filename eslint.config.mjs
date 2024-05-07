@@ -15,6 +15,7 @@ export default [
   ...compat.extends(
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:vue/vue3-essential",
+    "./.eslintrc-auto-import.json",
     "prettier"
     // Make sure "prettier" is the last element in this list.
   ),
