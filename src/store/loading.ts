@@ -6,5 +6,11 @@ export const useLoadingStore = defineStore("loading", {
     setLoading(value: boolean) {
       this.loading = value
     },
+    startLoading() {
+      this.setLoading(true)
+    },
+    stopLoading() {
+      this.setLoading(false)
+    },
   },
 })
