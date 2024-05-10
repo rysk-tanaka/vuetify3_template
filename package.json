@@ -6,12 +6,13 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "style": "prettier --ignore-unknown --write src/",
-    "lint": "eslint 'src/**/*.{ts,js,vue}'",
+    "lint": "eslint 'src/**/*.{ts,js,vue}' --fix",
     "style:lint": "npm run style && npm run lint",
     "preview": "vite preview"
   },
   "dependencies": {
     "@mdi/font": "6.2.95",
+    "pinia": "^2.1.7",
     "roboto-fontface": "*",
     "vue": "^3.4.21",
     "vue-router": "^4.3.2",
