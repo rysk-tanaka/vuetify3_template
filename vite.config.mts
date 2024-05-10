@@ -85,7 +85,7 @@ export default defineConfig({
         // './composables' // only root modules
         // './composables/**', // all nested modules
         // ...
-        "src/stores",
+        "src/store",
       ],
 
       // Filepath to generate corresponding .d.ts file.
