@@ -3,6 +3,7 @@
     <NavigationLayout />
     <v-main>
       <v-container>
+        <LoadingOverlay />
         <router-view />
       </v-container>
     </v-main>
